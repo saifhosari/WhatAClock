@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&family=Noto+Sans+Egyptian+Hieroglyphs&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: "Henny Penny", cursive;
+  color: rgb(233, 156, 13);
+}
+body {
+  background-image: url(https://cdn.wallpapersafari.com/95/47/4HChTf.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* min-width: 288px; */
+  overflow: hidden;
+}
+.clock {
+  width: 300px;
+  height: 300px;
+  /* background-color: rgb(44, 37, 5); */
+  background-image: url(https://cdn.wallpapersafari.com/80/56/PHWYxq.jpg);
+  background-size: cover;
+  background-position: 50%;
+  /* background-repeat: no-repeat; */
+  border-radius: 50%;
+  border: 4px solid black;
+  position: relative;
+  box-shadow: 0px 0px 10px rgb(27, 20, 2), 0 0px 10px black;
+}
+.clock .number {
+  --rotation: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(var(--rotation));
+  font-size: 1.5rem;
+  text-shadow: 0px 5px 6px rgb(112, 24, 9), 0 5px 10px black;
+}
+.clock .number1 {
+  --rotation: 30deg;
+}
+.clock .number2 {
+  --rotation: 60deg;
+  transform: translateX(70px);
+  top: 22%;
+  left: 13%;
+}
+.clock .number3 {
+  --rotation: 90deg;
+  transform: rotate(358deg);
+  margin-top: 129px;
+  margin-left: 125px;
+}
+.clock .number4 {
+  --rotation: 120deg;
+  transform: rotate(360deg);
+  margin-top: 195px;
+  margin-left: 110px;
+}
+.clock .number5 {
+  --rotation: 150deg;
+  transform: rotate(340deg);
+  margin-top: 235px;
+  margin-left: 109px;
+}
+.clock .number6 {
+  --rotation: 180deg;
+  transform: rotate(360deg);
+  margin-top: 259px;
+}
+.clock .number7 {
+  --rotation: 210deg;
+  transform: rotate(360deg);
+  margin-top: 243px;
+  margin-left: -67px;
+}
+.clock .number8 {
+  --rotation: 240deg;
+}
+.clock .number9 {
+  --rotation: 270deg;
+  transform: rotate(358deg);
+  margin-top: 129px;
+  margin-left: -120px;
+}
+.clock .number10 {
+  --rotation: 300deg;
+}
+.clock .number11 {
+  --rotation: 330deg;
+}
+.clock .hand {
+  --rotation: 0;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  background-color: black;
+  border: 1px solid rgb(3, 27, 47);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  transform-origin: bottom;
+  z-index: 10;
+  transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+}
+.clock::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  z-index: 11;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.clock .hand.second {
+  width: 3px;
+  height: 42%;
+  background-color: rgb(241, 171, 130);
+}
+.clock .hand.minute {
+  width: 7px;
+  height: 40%;
+  background-color: rgb(36, 5, 5);
+}
+.clock .hand.hour {
+  width: 10px;
+  height: 35%;
+  background-color: rgb(36, 5, 5);
+}

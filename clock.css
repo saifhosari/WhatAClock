@@ -20,8 +20,8 @@ body {
   overflow: hidden;
 }
 .clock {
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
   /* background-color: rgb(44, 37, 5); */
   background-image: url(https://cdn.wallpapersafari.com/80/56/PHWYxq.jpg);
   background-size: cover;
@@ -39,7 +39,7 @@ body {
   height: 100%;
   text-align: center;
   transform: rotate(var(--rotation));
-  font-size: 1.5rem;
+  font-size: 2.6rem;
   text-shadow: 0px 5px 6px rgb(112, 24, 9), 0 5px 10px black;
 }
 .clock .number1 {
@@ -49,36 +49,36 @@ body {
   --rotation: 60deg;
   transform: translateX(70px);
   top: 22%;
-  left: 13%;
+  left: 22%;
 }
 .clock .number3 {
   --rotation: 90deg;
   transform: rotate(358deg);
-  margin-top: 129px;
-  margin-left: 125px;
+  top: 215px;
+  left: 210px;
 }
 .clock .number4 {
   --rotation: 120deg;
   transform: rotate(360deg);
-  margin-top: 195px;
-  margin-left: 110px;
+  top: 320px;
+  left: 190px;
 }
 .clock .number5 {
   --rotation: 150deg;
   transform: rotate(340deg);
-  margin-top: 235px;
-  margin-left: 109px;
+  top: 392px;
+  left: 184px;
 }
 .clock .number6 {
   --rotation: 180deg;
   transform: rotate(360deg);
-  margin-top: 259px;
+  top: 434px;
 }
 .clock .number7 {
   --rotation: 210deg;
   transform: rotate(360deg);
-  margin-top: 243px;
-  margin-left: -67px;
+  top: 407px;
+  left: -110px;
 }
 .clock .number8 {
   --rotation: 240deg;
@@ -86,8 +86,8 @@ body {
 .clock .number9 {
   --rotation: 270deg;
   transform: rotate(358deg);
-  margin-top: 129px;
-  margin-left: -120px;
+  top: 215px;
+  left: -197px;
 }
 .clock .number10 {
   --rotation: 300deg;
